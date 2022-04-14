@@ -1,0 +1,100 @@
+{
+  "@context" : {
+    "FromPlanet" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#FromPlanet"
+    },
+    "PowerLevel" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#PowerLevel"
+    },
+    "Medium" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Medium"
+    },
+    "CriticalTournaments" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#CriticalTournaments"
+    },
+    "hasWon" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#hasWon",
+      "@type" : "@id"
+    },
+    "hasPowerOfLevel" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#hasPowerOfLevel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "OutEarth" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#OutEarth"
+    },
+    "hasTournaments" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#hasTournaments",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "ClassicTournamet" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#ClassicTournamet"
+    },
+    "Super_Spirit_Bomb" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Super_Spirit_Bomb"
+    },
+    "Techniques" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Techniques"
+    },
+    "Tournamets" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Tournamets"
+    },
+    "TournamentsKING" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#TournamentsKING"
+    },
+    "High" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#High"
+    },
+    "Earth" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Earth"
+    },
+    "Autonomous_Ultra_Instinct" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Autonomous_Ultra_Instinct"
+    },
+    "hasTransformation" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#hasTransformation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Competitor" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Competitor"
+    },
+    "Kamehameha" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Kamehameha"
+    },
+    "hasCharacterisitiques" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#hasCharacterisitiques",
+      "@type" : "@id"
+    },
+    "CompetitorProperties" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#CompetitorProperties"
+    },
+    "Hide" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Hide"
+    },
+    "Low" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Low"
+    },
+    "StopTime" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#StopTime"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "fromPlanet" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#fromPlanet",
+      "@type" : "@id"
+    },
+    "Transformations" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Transformations"
+    },
+    "Solar_Flare" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Solar_Flare"
+    },
+    "Drunken_Fist" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Drunken_Fist"
+    }
+  }
+}
