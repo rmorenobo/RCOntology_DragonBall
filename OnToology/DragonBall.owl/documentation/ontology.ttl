@@ -1,0 +1,586 @@
+@prefix : <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#> .
+
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball> rdf:type owl:Ontology ;
+                                                                 owl:versionIRI <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball/1.0.0> ;
+                                                                 rdfs:comment """Ontology about Dragon Ball Tournaments create by Roberto Moreno
+Info:https://dragonball.fandom.com/wiki/World_Martial_Arts_Tournament"""@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#fromPlanet
+:fromPlanet rdf:type owl:ObjectProperty ;
+            rdfs:domain :Competitor ;
+            rdfs:range :FromPlanet ;
+            rdfs:comment "Competitor origin Planet" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#hasCharacterisitiques
+:hasCharacterisitiques rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Competitor ;
+                       rdfs:range :CompetitorProperties ;
+                       rdfs:comment "Competitor has Characterisitiques" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#hasWon
+:hasWon rdf:type owl:ObjectProperty ,
+                 owl:AsymmetricProperty ;
+        rdfs:domain :Competitor ;
+        rdfs:range :Tournamets ;
+        rdfs:comment "Competitor who has won a tournamet" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#hasPowerOfLevel
+:hasPowerOfLevel rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Competitor ;
+                 rdfs:range xsd:integer ;
+                 rdfs:comment "Competitor Power Level" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#hasTournaments
+:hasTournaments rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Competitor ;
+                rdfs:range xsd:integer ;
+                rdfs:comment "Won Tournaments" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#hasTransformation
+:hasTransformation rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Competitor ;
+                   rdfs:range xsd:integer ;
+                   rdfs:comment "Cometitor totla Transformations" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Autonomous_Ultra_Instinct
+:Autonomous_Ultra_Instinct rdf:type owl:Class ;
+                           rdfs:subClassOf :Techniques ;
+                           rdfs:comment "Autonomous Ultra Instinct"@en .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#ClassicTournamet
+:ClassicTournamet rdf:type owl:Class ;
+                  rdfs:subClassOf :Tournamets ;
+                  rdfs:comment "Classic Tournaments"@en .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Competitor
+:Competitor rdf:type owl:Class ;
+            rdfs:comment "Competitor" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#CompetitorProperties
+:CompetitorProperties rdf:type owl:Class ;
+                      rdfs:comment "Competitor characteristics, planet, power lever, Techniques"@en .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#CriticalTournaments
+:CriticalTournaments rdf:type owl:Class ;
+                     rdfs:subClassOf :Tournamets ;
+                     rdfs:comment "Special Martial Arts Tournaments"@en .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Drunken_Fist
+:Drunken_Fist rdf:type owl:Class ;
+              rdfs:subClassOf :Techniques ;
+              rdfs:comment "Drunken fist"@en .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Earth
+:Earth rdf:type owl:Class ;
+       rdfs:subClassOf :FromPlanet ;
+       owl:disjointWith :OutEarth ;
+       rdfs:comment "From earth planet"@en .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#FromPlanet
+:FromPlanet rdf:type owl:Class ;
+            rdfs:subClassOf :CompetitorProperties ;
+            rdfs:comment "Planet Origin"@en .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Hide
+:Hide rdf:type owl:Class ;
+      rdfs:subClassOf :Techniques ;
+      rdfs:comment "Hide"@en .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#High
+:High rdf:type owl:Class ;
+      rdfs:subClassOf :PowerLevel ;
+      rdfs:comment "High Power"@en .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Kamehameha
+:Kamehameha rdf:type owl:Class ;
+            rdfs:subClassOf :Techniques ;
+            rdfs:comment "Kamehameha"@en .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Low
+:Low rdf:type owl:Class ;
+     rdfs:subClassOf :PowerLevel ;
+     rdfs:comment "Low or Very Low Power"@en .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Medium
+:Medium rdf:type owl:Class ;
+        rdfs:subClassOf :PowerLevel ;
+        rdfs:comment "Medium Power"@en .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#OutEarth
+:OutEarth rdf:type owl:Class ;
+          rdfs:subClassOf :FromPlanet ;
+          rdfs:comment "off planet earth"@en .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#PowerLevel
+:PowerLevel rdf:type owl:Class ;
+            rdfs:subClassOf :CompetitorProperties ;
+            rdfs:comment "Level of Power"@en .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Solar_Flare
+:Solar_Flare rdf:type owl:Class ;
+             rdfs:subClassOf :Techniques ;
+             rdfs:comment "Solar Flare" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#StopTime
+:StopTime rdf:type owl:Class ;
+          rdfs:subClassOf :Techniques ;
+          rdfs:comment "Stop time" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Super_Spirit_Bomb
+:Super_Spirit_Bomb rdf:type owl:Class ;
+                   rdfs:subClassOf :Techniques ;
+                   rdfs:comment "Super spirit bomb" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Techniques
+:Techniques rdf:type owl:Class ;
+            rdfs:subClassOf :CompetitorProperties ;
+            rdfs:comment "Power techniques"@en .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#TournamentsKING
+:TournamentsKING rdf:type owl:Class ;
+                 rdfs:subClassOf :Competitor ;
+                 rdfs:comment "The best fighter of all time"@en .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Tournamets
+:Tournamets rdf:type owl:Class ;
+            rdfs:comment "Dragon ball Tournaments"@en ,
+                         "https://dragonball.fandom.com/wiki/World_Martial_Arts_Tournament"^^xsd:anyURI .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Transformations
+:Transformations rdf:type owl:Class ;
+                 rdfs:subClassOf :CompetitorProperties ;
+                 rdfs:comment "Competitor number of transformations"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Cell_Games
+:Cell_Games rdf:type owl:NamedIndividual ,
+                     :CriticalTournaments ;
+            rdfs:comment "Cell Games" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Gohan
+:Gohan rdf:type owl:NamedIndividual ,
+                :Competitor ,
+                :Kamehameha ;
+       :fromPlanet :earth ;
+       :hasWon :Cell_Games ;
+       :hasPowerOfLevel "7000000"^^xsd:int ;
+       :hasTournaments "1"^^xsd:int ;
+       :hasTransformation "3"^^xsd:int ;
+       rdfs:comment "Son Gohan" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Goku
+:Goku rdf:type owl:NamedIndividual ,
+               :Autonomous_Ultra_Instinct ,
+               :Competitor ,
+               :Kamehameha ,
+               :Super_Spirit_Bomb ;
+      :fromPlanet :earth ;
+      :hasWon :Tournament_of_Power ,
+              <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#23rd_Tournament> ;
+      :hasPowerOfLevel "1500000000"^^xsd:int ;
+      :hasTournaments "3"^^xsd:int ;
+      :hasTransformation "13"^^xsd:int ;
+      rdfs:comment "Son Goku" ;
+      rdfs:sameAs "https://dbpedia.org/page/Goku"^^xsd:anyURI .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Hit
+:Hit rdf:type owl:NamedIndividual ,
+              :Competitor ,
+              :StopTime ;
+     :fromPlanet :outearth ;
+     :hasPowerOfLevel "1500000100"^^xsd:int ;
+     :hasTournaments "0"^^xsd:int ;
+     :hasTransformation "1"^^xsd:int ;
+     rdfs:comment "Hit" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Intergalactic_World_Tournament
+:Intergalactic_World_Tournament rdf:type owl:NamedIndividual ,
+                                         :CriticalTournaments ;
+                                rdfs:comment "Intergalactic world Tournament" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Jackie_Chun
+:Jackie_Chun rdf:type owl:NamedIndividual ,
+                      :Competitor ,
+                      :Drunken_Fist ,
+                      :Kamehameha ;
+             :fromPlanet :earth ;
+             :hasWon <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#21th_Tournament> ;
+             :hasPowerOfLevel "1240"^^xsd:int ;
+             :hasTransformation "1"^^xsd:int ;
+             rdfs:comment "Jackie Chun" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Mr.Satan
+:Mr.Satan rdf:type owl:NamedIndividual ,
+                   :Competitor ,
+                   :Hide ;
+          :fromPlanet :earth ;
+          :hasWon :Intergalactic_World_Tournament ,
+                  <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#24th_Tournament> ,
+                  <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#26th_Tournament> ,
+                  <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#29th_Tournament> ,
+                  <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#30th__Tournament> ;
+          :hasPowerOfLevel "10"^^xsd:int ;
+          :hasTournaments "7"^^xsd:int ;
+          :hasTransformation "0"^^xsd:int ;
+          rdfs:comment "Mr Satan" ;
+          rdfs:sameAs "https://dbpedia.org/page/Mr._Satan"^^xsd:anyURI .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Tien_Shinhan
+:Tien_Shinhan rdf:type owl:NamedIndividual ,
+                       :Competitor ,
+                       :Solar_Flare ;
+              :fromPlanet :earth ;
+              :hasWon <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#22nd_Tournament> ;
+              :hasPowerOfLevel "250"^^xsd:int ;
+              :hasTournaments "1"^^xsd:int ;
+              :hasTransformation "0"^^xsd:int ;
+              rdfs:comment "Tien ShinHan" ;
+              rdfs:sameAs "https://dbpedia.org/page/Tien_Shinhan"^^xsd:anyURI .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Tournament_of_Power
+:Tournament_of_Power rdf:type owl:NamedIndividual ,
+                              :CriticalTournaments ;
+                     rdfs:comment "Tournament of Power" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#autonomous_Ultra_Instinct
+:autonomous_Ultra_Instinct rdf:type owl:NamedIndividual ,
+                                    :Autonomous_Ultra_Instinct ;
+                           rdfs:comment "Ultra instict" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#drunken_Fist
+:drunken_Fist rdf:type owl:NamedIndividual ,
+                       :Drunken_Fist ;
+              rdfs:comment "Drunken fist" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#earth
+:earth rdf:type owl:NamedIndividual ,
+                :Earth ;
+       rdfs:comment "earth" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#hide
+:hide rdf:type owl:NamedIndividual ,
+               :Hide ;
+      rdfs:comment "Hide and run from danger" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#kamehameha
+:kamehameha rdf:type owl:NamedIndividual ,
+                     :Kamehameha ;
+            rdfs:comment "Kamehameha" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#outearth
+:outearth rdf:type owl:NamedIndividual ,
+                   :OutEarth ;
+          rdfs:comment "Out from earth" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#solar_Flare
+:solar_Flare rdf:type owl:NamedIndividual ,
+                      :Solar_Flare ;
+             rdfs:comment "Solar flare" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#stopTime
+:stopTime rdf:type owl:NamedIndividual ,
+                   :StopTime ;
+          rdfs:comment "Stop Time" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#super_spirit_bomb
+:super_spirit_bomb rdf:type owl:NamedIndividual ,
+                            :Super_Spirit_Bomb ;
+                   rdfs:comment "Super spirit Bomb" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#21th_Tournament
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#21th_Tournament> rdf:type owl:NamedIndividual ,
+                                                                                         :ClassicTournamet ;
+                                                                                rdfs:comment "21th Tournament" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#22nd_Tournament
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#22nd_Tournament> rdf:type owl:NamedIndividual ,
+                                                                                         :ClassicTournamet ;
+                                                                                rdfs:comment "22nd Tournament" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#23rd_Tournament
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#23rd_Tournament> rdf:type owl:NamedIndividual ,
+                                                                                         :ClassicTournamet ;
+                                                                                rdfs:comment "23rd Tournament" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#24th_Tournament
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#24th_Tournament> rdf:type owl:NamedIndividual ,
+                                                                                         :ClassicTournamet ;
+                                                                                rdfs:comment "24th Tournament" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#26th_Tournament
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#26th_Tournament> rdf:type owl:NamedIndividual ,
+                                                                                         :ClassicTournamet ;
+                                                                                rdfs:comment "26th Tournament" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#27th_Tournament
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#27th_Tournament> rdf:type owl:NamedIndividual ,
+                                                                                         :ClassicTournamet ;
+                                                                                rdfs:comment "27th Tournament" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#29th_Tournament
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#29th_Tournament> rdf:type owl:NamedIndividual ,
+                                                                                         :ClassicTournamet ;
+                                                                                rdfs:comment "29th Tournament" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#30th__Tournament
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#30th__Tournament> rdf:type owl:NamedIndividual ,
+                                                                                          :ClassicTournamet ;
+                                                                                 rdfs:comment "30th Tournament" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+owl:Thing rdfs:sameAs "https://dbpedia.org/page/Dragon_Ball" .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#w> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#l> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Competitor ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasWon ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#w>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#w> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 5 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :TournamentsKING ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Competitor ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPowerOfLevel ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#l>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#l> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 100 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <urn:swrl:var#l> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first 250 ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Medium ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Competitor ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPowerOfLevel ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#l>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#l> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 100 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Low ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Competitor ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPowerOfLevel ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#l>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#l> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 250 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :High ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
