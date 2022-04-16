@@ -66,7 +66,7 @@
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#hasTransformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#hasTransformation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Competitor> .
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#hasTransformation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#hasTransformation> <http://www.w3.org/2000/01/rdf-schema#comment> "Cometitor totla Transformations" .
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#hasTransformation> <http://www.w3.org/2000/01/rdf-schema#comment> "Competitor total Transformations"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 # 
 # 
 # 
@@ -76,6 +76,12 @@
 # #
 # #################################################################
 # 
+# 
+# http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AbleTransformation
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AbleTransformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AbleTransformation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Transformations> .
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AbleTransformation> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#ImposibleToTransform> .
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AbleTransformation> <http://www.w3.org/2000/01/rdf-schema#comment> "Competitor cant get transformation"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 # 
 # http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Autonomous_Ultra_Instinct
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Autonomous_Ultra_Instinct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -125,6 +131,11 @@
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#High> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#High> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#PowerLevel> .
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#High> <http://www.w3.org/2000/01/rdf-schema#comment> "High Power"@en .
+# 
+# http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#ImposibleToTransform
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#ImposibleToTransform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#ImposibleToTransform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Transformations> .
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#ImposibleToTransform> <http://www.w3.org/2000/01/rdf-schema#comment> "Competitor can get transformations"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 # 
 # http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Kamehameha
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Kamehameha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -285,6 +296,10 @@
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Tournament_of_Power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#CriticalTournaments> .
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Tournament_of_Power> <http://www.w3.org/2000/01/rdf-schema#comment> "Tournament of Power" .
 # 
+# http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#ableTransformation
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#ableTransformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#ableTransformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AbleTransformation> .
+# 
 # http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#autonomous_Ultra_Instinct
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#autonomous_Ultra_Instinct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#autonomous_Ultra_Instinct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Autonomous_Ultra_Instinct> .
@@ -304,6 +319,10 @@
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#hide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#hide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Hide> .
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#hide> <http://www.w3.org/2000/01/rdf-schema#comment> "Hide and run from danger" .
+# 
+# http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#imposibleToTransform
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#imposibleToTransform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#imposibleToTransform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#ImposibleToTransform> .
 # 
 # http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#kamehameha
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#kamehameha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -392,6 +411,7 @@
 # 
 <urn:swrl:var#p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
 <urn:swrl:var#l> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#t> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
 <urn:swrl:var#w> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
 _:genid1 <http://www.w3.org/2003/11/swrl#body> _:genid12 .
@@ -506,7 +526,7 @@ _:genid27 <http://www.w3.org/2003/11/swrl#head> _:genid36 .
 _:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid37 .
 _:genid37 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
-_:genid37 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#High> .
+_:genid37 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AbleTransformation> .
 _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
 _:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
 _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
@@ -518,17 +538,17 @@ _:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid40 .
 _:genid40 <http://www.w3.org/2003/11/swrl#arguments> _:genid42 .
 _:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
 _:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#w> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#t> .
 _:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid40 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
 _:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
 _:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
 _:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid44 .
-_:genid44 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#w> .
+_:genid44 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#t> .
 _:genid44 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
-_:genid44 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#hasTournaments> .
+_:genid44 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#hasTransformation> .
 _:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
 _:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
 _:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid46 .
@@ -540,7 +560,75 @@ _:genid38 <http://www.w3.org/2003/11/swrl#head> _:genid47 .
 _:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid48 .
 _:genid48 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
-_:genid48 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#TournamentsKING> .
+_:genid48 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AbleTransformation> .
 _:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
 _:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid49 <http://www.w3.org/2003/11/swrl#body> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid51 .
+_:genid51 <http://www.w3.org/2003/11/swrl#arguments> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#t> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid55 .
+_:genid55 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#t> .
+_:genid55 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid55 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#hasTransformation> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid57 .
+_:genid57 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid57 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Competitor> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid49 <http://www.w3.org/2003/11/swrl#head> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid59 .
+_:genid59 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid59 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#ImposibleToTransform> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid60 <http://www.w3.org/2003/11/swrl#body> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid62 .
+_:genid62 <http://www.w3.org/2003/11/swrl#arguments> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#w> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid62 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid66 .
+_:genid66 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#w> .
+_:genid66 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid66 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#hasTournaments> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid68 .
+_:genid68 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid68 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Competitor> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid60 <http://www.w3.org/2003/11/swrl#head> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid70 .
+_:genid70 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid70 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#TournamentsKING> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
