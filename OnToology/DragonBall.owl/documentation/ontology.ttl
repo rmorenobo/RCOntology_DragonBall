@@ -283,7 +283,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                   <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#29th_Tournament> ,
                   <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#30th__Tournament> ;
           :hasPowerOfLevel "10"^^xsd:int ;
-          :hasTournaments "7"^^xsd:int ;
+          :hasTournaments "6"^^xsd:int ;
           :hasTransformation "0"^^xsd:int ;
           rdfs:comment "Mr Satan" ;
           rdfs:sameAs "https://dbpedia.org/page/Mr._Satan"^^xsd:anyURI .
@@ -423,45 +423,9 @@ owl:Thing rdfs:sameAs "https://dbpedia.org/page/Dragon_Ball" .
 
 <urn:swrl:var#p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
-<urn:swrl:var#w> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
-
 <urn:swrl:var#l> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
-[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
-   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Competitor ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
-                                                     ] ;
-                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasWon ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#w>
-                                                                ] ;
-                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
-                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
-                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
-                                                                                                                          rdf:first <urn:swrl:var#w> ;
-                                                                                                                          rdf:rest [ rdf:type rdf:List ;
-                                                                                                                                     rdf:first 5 ;
-                                                                                                                                     rdf:rest rdf:nil
-                                                                                                                                   ]
-                                                                                                                        ]
-                                                                           ] ;
-                                                                 rdf:rest rdf:nil
-                                                               ]
-                                                    ]
-                                         ] ;
-   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :TournamentsKING ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
-                                                     ] ;
-                                           rdf:rest rdf:nil
-                                         ]
- ] .
+<urn:swrl:var#w> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
 [ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -577,6 +541,42 @@ owl:Thing rdfs:sameAs "https://dbpedia.org/page/Dragon_Ball" .
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
                                                        <http://www.w3.org/2003/11/swrl#classPredicate> :High ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Competitor ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasTournaments ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#w>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#w> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 5 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :TournamentsKING ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
                                                      ] ;
                                            rdf:rest rdf:nil
