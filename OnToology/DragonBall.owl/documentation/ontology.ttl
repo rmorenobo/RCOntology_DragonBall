@@ -24,7 +24,8 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 #################################################################
 
 ###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#fromPlanet
-:fromPlanet rdf:type owl:ObjectProperty ;
+:fromPlanet rdf:type owl:ObjectProperty ,
+                     owl:AsymmetricProperty ;
             rdfs:domain :Competitor ;
             rdfs:range :FromPlanet ;
             rdfs:comment "Competitor origin Planet" .
@@ -81,10 +82,10 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                     rdfs:comment "Competitor cant get transformation"^^rdfs:Literal .
 
 
-###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Autonomous_Ultra_Instinct
-:Autonomous_Ultra_Instinct rdf:type owl:Class ;
-                           rdfs:subClassOf :Techniques ;
-                           rdfs:comment "Autonomous Ultra Instinct"@en .
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AutonomousUltraInstinct
+:AutonomousUltraInstinct rdf:type owl:Class ;
+                         rdfs:subClassOf :Techniques ;
+                         rdfs:comment "Autonomous Ultra Instinct"@en .
 
 
 ###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#ClassicTournamet
@@ -109,10 +110,10 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                      rdfs:comment "Special Martial Arts Tournaments"@en .
 
 
-###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Drunken_Fist
-:Drunken_Fist rdf:type owl:Class ;
-              rdfs:subClassOf :Techniques ;
-              rdfs:comment "Drunken fist"@en .
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#DrunkenFist
+:DrunkenFist rdf:type owl:Class ;
+             rdfs:subClassOf :Techniques ;
+             rdfs:comment "Drunken fist"@en .
 
 
 ###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Earth
@@ -188,10 +189,10 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
           rdfs:comment "Stop time" .
 
 
-###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Super_Spirit_Bomb
-:Super_Spirit_Bomb rdf:type owl:Class ;
-                   rdfs:subClassOf :Techniques ;
-                   rdfs:comment "Super spirit bomb" .
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#SuperSpiritBomb
+:SuperSpiritBomb rdf:type owl:Class ;
+                 rdfs:subClassOf :Techniques ;
+                 rdfs:comment "Super spirit bomb" .
 
 
 ###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Techniques
@@ -242,10 +243,10 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Goku
 :Goku rdf:type owl:NamedIndividual ,
-               :Autonomous_Ultra_Instinct ,
+               :AutonomousUltraInstinct ,
                :Competitor ,
                :Kamehameha ,
-               :Super_Spirit_Bomb ;
+               :SuperSpiritBomb ;
       :fromPlanet :earth ;
       :hasWon :Tournament_of_Power ,
               <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#23rd_Tournament> ;
@@ -276,7 +277,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Jackie_Chun
 :Jackie_Chun rdf:type owl:NamedIndividual ,
                       :Competitor ,
-                      :Drunken_Fist ,
+                      :DrunkenFist ,
                       :Kamehameha ;
              :fromPlanet :earth ;
              :hasWon <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#21th_Tournament> ;
@@ -328,13 +329,13 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#autonomous_Ultra_Instinct
 :autonomous_Ultra_Instinct rdf:type owl:NamedIndividual ,
-                                    :Autonomous_Ultra_Instinct ;
+                                    :AutonomousUltraInstinct ;
                            rdfs:comment "Ultra instict" .
 
 
 ###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#drunken_Fist
 :drunken_Fist rdf:type owl:NamedIndividual ,
-                       :Drunken_Fist ;
+                       :DrunkenFist ;
               rdfs:comment "Drunken fist" .
 
 
@@ -381,7 +382,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#super_spirit_bomb
 :super_spirit_bomb rdf:type owl:NamedIndividual ,
-                            :Super_Spirit_Bomb ;
+                            :SuperSpiritBomb ;
                    rdfs:comment "Super spirit Bomb" .
 
 
@@ -437,7 +438,8 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 #    Annotations
 #################################################################
 
-owl:Thing rdfs:sameAs "https://dbpedia.org/page/Dragon_Ball" .
+owl:Thing rdfs:comment "DragonBall Parent Class"^^rdfs:Literal ;
+          rdfs:sameAs "https://dbpedia.org/page/Dragon_Ball" .
 
 
 #################################################################
@@ -565,7 +567,7 @@ owl:Thing rdfs:sameAs "https://dbpedia.org/page/Dragon_Ball" .
                                          ] ;
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :AbleTransformation ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :High ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
                                                      ] ;
                                            rdf:rest rdf:nil
