@@ -9,6 +9,9 @@
     "Medium" : {
       "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Medium"
     },
+    "DrunkenFist" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#DrunkenFist"
+    },
     "CriticalTournaments" : {
       "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#CriticalTournaments"
     },
@@ -30,9 +33,6 @@
     "ClassicTournamet" : {
       "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#ClassicTournamet"
     },
-    "Super_Spirit_Bomb" : {
-      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Super_Spirit_Bomb"
-    },
     "Techniques" : {
       "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Techniques"
     },
@@ -48,12 +48,12 @@
     "Earth" : {
       "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Earth"
     },
-    "Autonomous_Ultra_Instinct" : {
-      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Autonomous_Ultra_Instinct"
-    },
     "hasTransformation" : {
       "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#hasTransformation",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "AutonomousUltraInstinct" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AutonomousUltraInstinct"
     },
     "Competitor" : {
       "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Competitor"
@@ -90,14 +90,14 @@
     "Transformations" : {
       "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Transformations"
     },
+    "SuperSpiritBomb" : {
+      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#SuperSpiritBomb"
+    },
     "Solar_Flare" : {
       "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Solar_Flare"
     },
     "ImposibleToTransform" : {
       "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#ImposibleToTransform"
-    },
-    "Drunken_Fist" : {
-      "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Drunken_Fist"
     },
     "AbleTransformation" : {
       "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AbleTransformation"

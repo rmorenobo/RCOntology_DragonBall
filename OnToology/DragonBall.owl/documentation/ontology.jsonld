@@ -181,7 +181,7 @@
     "@id" : "urn:swrl:var#p"
   } ],
   "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AbleTransformation"
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#High"
   } ]
 }, {
   "@id" : "_:genid38",
@@ -476,7 +476,7 @@
     "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#ImposibleToTransform"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Autonomous_Ultra_Instinct",
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AutonomousUltraInstinct",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -528,7 +528,7 @@
     "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Tournamets"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Drunken_Fist",
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#DrunkenFist",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -613,13 +613,13 @@
     "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#23rd_Tournament"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Autonomous_Ultra_Instinct"
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AutonomousUltraInstinct"
   }, {
     "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Competitor"
   }, {
     "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Kamehameha"
   }, {
-    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Super_Spirit_Bomb"
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#SuperSpiritBomb"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Son Goku"
@@ -713,7 +713,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Competitor"
   }, {
-    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Drunken_Fist"
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#DrunkenFist"
   }, {
     "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Kamehameha"
   } ],
@@ -830,7 +830,7 @@
     "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Techniques"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Super_Spirit_Bomb",
+  "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#SuperSpiritBomb",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Super spirit bomb"
@@ -930,7 +930,7 @@
   "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#autonomous_Ultra_Instinct",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Autonomous_Ultra_Instinct"
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AutonomousUltraInstinct"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Ultra instict"
@@ -939,7 +939,7 @@
   "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#drunken_Fist",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Drunken_Fist"
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#DrunkenFist"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Drunken fist"
@@ -955,7 +955,7 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#fromPlanet",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Competitor origin Planet"
   } ],
@@ -1081,7 +1081,7 @@
   "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#super_spirit_bomb",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Super_Spirit_Bomb"
+    "@id" : "http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#SuperSpiritBomb"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Super spirit Bomb"
@@ -1091,6 +1091,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/2002/07/owl#Thing",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "DragonBall Parent Class"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
     "@value" : "https://dbpedia.org/page/Dragon_Ball"
   } ]

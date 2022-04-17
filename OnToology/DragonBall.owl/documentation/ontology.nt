@@ -24,6 +24,7 @@
 # 
 # http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#fromPlanet
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#fromPlanet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#fromPlanet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#fromPlanet> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Competitor> .
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#fromPlanet> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#FromPlanet> .
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#fromPlanet> <http://www.w3.org/2000/01/rdf-schema#comment> "Competitor origin Planet" .
@@ -83,10 +84,10 @@
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AbleTransformation> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#ImposibleToTransform> .
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AbleTransformation> <http://www.w3.org/2000/01/rdf-schema#comment> "Competitor cant get transformation"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 # 
-# http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Autonomous_Ultra_Instinct
-<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Autonomous_Ultra_Instinct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Autonomous_Ultra_Instinct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Techniques> .
-<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Autonomous_Ultra_Instinct> <http://www.w3.org/2000/01/rdf-schema#comment> "Autonomous Ultra Instinct"@en .
+# http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AutonomousUltraInstinct
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AutonomousUltraInstinct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AutonomousUltraInstinct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Techniques> .
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AutonomousUltraInstinct> <http://www.w3.org/2000/01/rdf-schema#comment> "Autonomous Ultra Instinct"@en .
 # 
 # http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#ClassicTournamet
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#ClassicTournamet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -106,10 +107,10 @@
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#CriticalTournaments> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Tournamets> .
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#CriticalTournaments> <http://www.w3.org/2000/01/rdf-schema#comment> "Special Martial Arts Tournaments"@en .
 # 
-# http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Drunken_Fist
-<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Drunken_Fist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Drunken_Fist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Techniques> .
-<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Drunken_Fist> <http://www.w3.org/2000/01/rdf-schema#comment> "Drunken fist"@en .
+# http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#DrunkenFist
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#DrunkenFist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#DrunkenFist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Techniques> .
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#DrunkenFist> <http://www.w3.org/2000/01/rdf-schema#comment> "Drunken fist"@en .
 # 
 # http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Earth
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Earth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -172,10 +173,10 @@
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#StopTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Techniques> .
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#StopTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Stop time" .
 # 
-# http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Super_Spirit_Bomb
-<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Super_Spirit_Bomb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Super_Spirit_Bomb> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Techniques> .
-<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Super_Spirit_Bomb> <http://www.w3.org/2000/01/rdf-schema#comment> "Super spirit bomb" .
+# http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#SuperSpiritBomb
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#SuperSpiritBomb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#SuperSpiritBomb> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Techniques> .
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#SuperSpiritBomb> <http://www.w3.org/2000/01/rdf-schema#comment> "Super spirit bomb" .
 # 
 # http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Techniques
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Techniques> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -224,10 +225,10 @@
 # 
 # http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Goku
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Goku> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Goku> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Autonomous_Ultra_Instinct> .
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Goku> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AutonomousUltraInstinct> .
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Goku> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Competitor> .
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Goku> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Kamehameha> .
-<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Goku> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Super_Spirit_Bomb> .
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Goku> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#SuperSpiritBomb> .
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Goku> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#fromPlanet> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#earth> .
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Goku> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#hasWon> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Tournament_of_Power> .
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Goku> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#hasWon> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#23rd_Tournament> .
@@ -255,7 +256,7 @@
 # http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Jackie_Chun
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Jackie_Chun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Jackie_Chun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Competitor> .
-<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Jackie_Chun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Drunken_Fist> .
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Jackie_Chun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#DrunkenFist> .
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Jackie_Chun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Kamehameha> .
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Jackie_Chun> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#fromPlanet> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#earth> .
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Jackie_Chun> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#hasWon> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#21th_Tournament> .
@@ -302,12 +303,12 @@
 # 
 # http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#autonomous_Ultra_Instinct
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#autonomous_Ultra_Instinct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#autonomous_Ultra_Instinct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Autonomous_Ultra_Instinct> .
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#autonomous_Ultra_Instinct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AutonomousUltraInstinct> .
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#autonomous_Ultra_Instinct> <http://www.w3.org/2000/01/rdf-schema#comment> "Ultra instict" .
 # 
 # http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#drunken_Fist
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#drunken_Fist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#drunken_Fist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Drunken_Fist> .
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#drunken_Fist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#DrunkenFist> .
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#drunken_Fist> <http://www.w3.org/2000/01/rdf-schema#comment> "Drunken fist" .
 # 
 # http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#earth
@@ -346,7 +347,7 @@
 # 
 # http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#super_spirit_bomb
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#super_spirit_bomb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#super_spirit_bomb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Super_Spirit_Bomb> .
+<http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#super_spirit_bomb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#SuperSpiritBomb> .
 <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#super_spirit_bomb> <http://www.w3.org/2000/01/rdf-schema#comment> "Super spirit Bomb" .
 # 
 # http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#21th_Tournament
@@ -398,6 +399,7 @@
 # #################################################################
 # 
 # 
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/2000/01/rdf-schema#comment> "DragonBall Parent Class"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Dragon_Ball" .
 # 
 # 
@@ -526,7 +528,7 @@ _:genid27 <http://www.w3.org/2003/11/swrl#head> _:genid36 .
 _:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid37 .
 _:genid37 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
-_:genid37 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AbleTransformation> .
+_:genid37 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#High> .
 _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
 _:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
 _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
