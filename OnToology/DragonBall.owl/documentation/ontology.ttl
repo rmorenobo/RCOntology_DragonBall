@@ -67,12 +67,19 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 :hasTransformation rdf:type owl:DatatypeProperty ;
                    rdfs:domain :Competitor ;
                    rdfs:range xsd:integer ;
-                   rdfs:comment "Cometitor totla Transformations" .
+                   rdfs:comment "Competitor total Transformations"^^rdfs:Literal .
 
 
 #################################################################
 #    Classes
 #################################################################
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AbleTransformation
+:AbleTransformation rdf:type owl:Class ;
+                    rdfs:subClassOf :Transformations ;
+                    owl:disjointWith :ImposibleToTransform ;
+                    rdfs:comment "Competitor cant get transformation"^^rdfs:Literal .
+
 
 ###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Autonomous_Ultra_Instinct
 :Autonomous_Ultra_Instinct rdf:type owl:Class ;
@@ -131,6 +138,12 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 :High rdf:type owl:Class ;
       rdfs:subClassOf :PowerLevel ;
       rdfs:comment "High Power"@en .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#ImposibleToTransform
+:ImposibleToTransform rdf:type owl:Class ;
+                      rdfs:subClassOf :Transformations ;
+                      rdfs:comment "Competitor can get transformations"^^rdfs:Literal .
 
 
 ###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Kamehameha
@@ -308,6 +321,11 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                      rdfs:comment "Tournament of Power" .
 
 
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#ableTransformation
+:ableTransformation rdf:type owl:NamedIndividual ,
+                             :AbleTransformation .
+
+
 ###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#autonomous_Ultra_Instinct
 :autonomous_Ultra_Instinct rdf:type owl:NamedIndividual ,
                                     :Autonomous_Ultra_Instinct ;
@@ -330,6 +348,11 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 :hide rdf:type owl:NamedIndividual ,
                :Hide ;
       rdfs:comment "Hide and run from danger" .
+
+
+###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#imposibleToTransform
+:imposibleToTransform rdf:type owl:NamedIndividual ,
+                               :ImposibleToTransform .
 
 
 ###  http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#kamehameha
@@ -424,6 +447,8 @@ owl:Thing rdfs:sameAs "https://dbpedia.org/page/Dragon_Ball" .
 <urn:swrl:var#p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
 <urn:swrl:var#l> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#t> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
 <urn:swrl:var#w> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
@@ -540,7 +565,79 @@ owl:Thing rdfs:sameAs "https://dbpedia.org/page/Dragon_Ball" .
                                          ] ;
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :High ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :AbleTransformation ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Competitor ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasTransformation ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#t>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#t> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 0 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :AbleTransformation ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Competitor ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasTransformation ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#t>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#t> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 1 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :ImposibleToTransform ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
                                                      ] ;
                                            rdf:rest rdf:nil
