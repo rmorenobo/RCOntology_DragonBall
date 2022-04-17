@@ -48,6 +48,7 @@ Info:https://dragonball.fandom.com/wiki/World_Martial_Arts_Tournament</rdfs:comm
     <!-- http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#fromPlanet -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#fromPlanet">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Competitor"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#FromPlanet"/>
         <rdfs:comment>Competitor origin Planet</rdfs:comment>
@@ -138,9 +139,9 @@ Info:https://dragonball.fandom.com/wiki/World_Martial_Arts_Tournament</rdfs:comm
     
 
 
-    <!-- http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Autonomous_Ultra_Instinct -->
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AutonomousUltraInstinct -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Autonomous_Ultra_Instinct">
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AutonomousUltraInstinct">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Techniques"/>
         <rdfs:comment xml:lang="en">Autonomous Ultra Instinct</rdfs:comment>
     </owl:Class>
@@ -182,9 +183,9 @@ Info:https://dragonball.fandom.com/wiki/World_Martial_Arts_Tournament</rdfs:comm
     
 
 
-    <!-- http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Drunken_Fist -->
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#DrunkenFist -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Drunken_Fist">
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#DrunkenFist">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Techniques"/>
         <rdfs:comment xml:lang="en">Drunken fist</rdfs:comment>
     </owl:Class>
@@ -300,9 +301,9 @@ Info:https://dragonball.fandom.com/wiki/World_Martial_Arts_Tournament</rdfs:comm
     
 
 
-    <!-- http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Super_Spirit_Bomb -->
+    <!-- http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#SuperSpiritBomb -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Super_Spirit_Bomb">
+    <owl:Class rdf:about="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#SuperSpiritBomb">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Techniques"/>
         <rdfs:comment>Super spirit bomb</rdfs:comment>
     </owl:Class>
@@ -384,10 +385,10 @@ Info:https://dragonball.fandom.com/wiki/World_Martial_Arts_Tournament</rdfs:comm
     <!-- http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Goku -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Goku">
-        <rdf:type rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Autonomous_Ultra_Instinct"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AutonomousUltraInstinct"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Competitor"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Kamehameha"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Super_Spirit_Bomb"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#SuperSpiritBomb"/>
         <fromPlanet rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#earth"/>
         <hasWon rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Tournament_of_Power"/>
         <hasWon rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#23rd_Tournament"/>
@@ -427,7 +428,7 @@ Info:https://dragonball.fandom.com/wiki/World_Martial_Arts_Tournament</rdfs:comm
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Jackie_Chun">
         <rdf:type rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Competitor"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Drunken_Fist"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#DrunkenFist"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Kamehameha"/>
         <fromPlanet rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#earth"/>
         <hasWon rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#21th_Tournament"/>
@@ -494,7 +495,7 @@ Info:https://dragonball.fandom.com/wiki/World_Martial_Arts_Tournament</rdfs:comm
     <!-- http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#autonomous_Ultra_Instinct -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#autonomous_Ultra_Instinct">
-        <rdf:type rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Autonomous_Ultra_Instinct"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AutonomousUltraInstinct"/>
         <rdfs:comment>Ultra instict</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -503,7 +504,7 @@ Info:https://dragonball.fandom.com/wiki/World_Martial_Arts_Tournament</rdfs:comm
     <!-- http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#drunken_Fist -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#drunken_Fist">
-        <rdf:type rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Drunken_Fist"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#DrunkenFist"/>
         <rdfs:comment>Drunken fist</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -574,7 +575,7 @@ Info:https://dragonball.fandom.com/wiki/World_Martial_Arts_Tournament</rdfs:comm
     <!-- http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#super_spirit_bomb -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#super_spirit_bomb">
-        <rdf:type rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#Super_Spirit_Bomb"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#SuperSpiritBomb"/>
         <rdfs:comment>Super spirit Bomb</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -661,6 +662,7 @@ Info:https://dragonball.fandom.com/wiki/World_Martial_Arts_Tournament</rdfs:comm
      -->
 
     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">DragonBall Parent Class</rdfs:comment>
         <rdfs:sameAs>https://dbpedia.org/page/Dragon_Ball</rdfs:sameAs>
     </rdf:Description>
     
@@ -834,7 +836,7 @@ Info:https://dragonball.fandom.com/wiki/World_Martial_Arts_Tournament</rdfs:comm
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#AbleTransformation"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/rober/ontologies/2022/2/dragonball#High"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
                     </rdf:Description>
                 </rdf:first>
